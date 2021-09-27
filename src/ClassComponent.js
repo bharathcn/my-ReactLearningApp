@@ -1,8 +1,8 @@
-import React from 'react';
+import {Component, createElement} from 'react';
 
-class ClassComponent extends React.Component {
+class ClassComponent extends Component {
   render(){
-    return React.createElement("div",null, "Class Component Example with Prop",this.props.count," ") ;
+    return createElement("div",null, "Class Component Example with Prop",this.props.count," ") ;
   }
 }
 export default ClassComponent;

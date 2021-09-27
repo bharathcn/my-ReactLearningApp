@@ -1,8 +1,8 @@
-import PureComponent from "./PureComponent";
+import SimplePureComponent from "./PureComponent";
 import ClassComponent from "./ClassComponent";
-import React from "react";
+import {Component} from "react";
 
-class Parent extends React.Component {
+class Parent extends Component {
     //  generateRandomNumbers=()=>{
     //  return Math.random().toFixed(2);
     //}
@@ -13,7 +13,7 @@ class Parent extends React.Component {
         return (
             <div>
                 <ClassComponent count={10} />
-                <PureComponent count={10}/>
+                <SimplePureComponent count={10}/>
             </div>
           );
     }

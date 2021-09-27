@@ -1,9 +1,14 @@
-import React from 'react';
+import { Fragment, PureComponent } from 'react';
 
-class PureComponent extends React.PureComponent{
-    render(){
-       return <div><p>Pure Component Example with Prop {this.props.count}</p></div>
-    }
+class SimplePureComponent extends PureComponent {
+  render() {
+    return (
+      <>
+          <div>test</div>
+          <p>Pure Component Example with Prop {this.props.count}</p>
+      </>
+    );
+  }
 }
 
-export default PureComponent;
+export default SimplePureComponent;

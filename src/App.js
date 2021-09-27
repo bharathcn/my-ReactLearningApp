@@ -1,15 +1,15 @@
-import React from 'react';
+import {StrictMode} from 'react';
 import Parent from './ParentComponent';
 const App = () =>{
   return (
-    <React.StrictMode>
+    <StrictMode>
     <div>
         <p>
           Example of Functional Component.
         </p>
         <Parent/>
     </div>
-    </React.StrictMode>
+    </StrictMode>
   );
 }
 
